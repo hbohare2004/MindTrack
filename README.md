@@ -1,16 +1,72 @@
-# React + Vite
+🧠 MindTrack – Mood & Productivity Tracker
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+MindTrack is a simple React-based web application that helps users track their daily mood, focus sessions, and productivity patterns.
+The project focuses on clean UI, meaningful frontend logic, and practical use of React Hooks.
 
-Currently, two official plugins are available:
+🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🎭 Daily Mood Tracking
 
-## React Compiler
+Users can log their mood (Happy, Neutral, Sad)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Mood history is stored with date
 
-## Expanding the ESLint configuration
+⏱️ Focus Timer (Pomodoro)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+25-minute focus sessions
+
+Start, pause, and reset functionality
+
+Tracks completed sessions and focus time
+
+📊 Productivity Summary
+
+Daily focus minutes
+
+Number of focus sessions completed
+
+🧠 Smart Insights
+
+Identifies the most frequent mood
+
+Provides simple productivity feedback based on focus time
+
+💾 Persistent Data
+
+Mood data stored using localStorage
+
+Data remains after page refresh
+
+🛠️ Tech Stack
+
+Frontend: React (Vite)
+
+Language: JavaScript (ES6+)
+
+Styling: Plain CSS
+
+State Management: React Hooks (useState, useEffect)
+
+Storage: Browser LocalStorage
+
+
+
+
+
+Project Structure
+
+src/
+ ├─ components/
+ │   ├─ Header.jsx
+ │   ├─ MoodSelector.jsx
+ │   ├─ MoodHistory.jsx
+ │   ├─ FocusTimer.jsx
+ │   ├─ SummaryCard.jsx
+ │   ├─ StatsCard.jsx
+ │   └─ Insights.jsx
+ ├─ pages/
+ │   └─ Dashboard.jsx
+ ├─ utils/
+ │   └─ storage.js
+ ├─ App.jsx
+ └─ main.jsx
